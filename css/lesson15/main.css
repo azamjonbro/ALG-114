@@ -1,0 +1,51 @@
+.box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    border: 2px solid black;
+    box-sizing: border-box;
+    transform: translateX(0px);
+    animation-name: elementnisurish;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.ikki{
+    background: red;
+    animation-delay: 1s;
+}
+.uch{
+    background: yellow;
+    animation-delay: 2s;
+}
+.tort{
+    background:dodgerblue;
+    animation-delay: 3s;
+}
+@keyframes elementnisurish{
+    0%{
+        transform: translateX(0px) translateY(0px);
+        background: url("https://picsum.photos/id/230/200/200");
+    }
+    25%{
+        transform: translateX(90vw) translateY(0px);
+        background: url("https://picsum.photos/id/231/200/200");
+    }
+    50%{
+        transform: translateX(90vw) translateY(80vh);
+        background: url("https://picsum.photos/id/232/200/200");
+
+    }
+    75%{
+        transform: translateX(0px) translateY(80vh);
+        background: url("https://picsum.photos/id/233/200/200");
+
+
+    }
+    100%{
+        transform: translateX(0px) translateY(0px);
+        background: url("https://picsum.photos/id/234/200/200");
+    }
+}
